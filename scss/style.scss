@@ -56,3 +56,22 @@ img {
       }
    }
 }
+
+// Landing
+.landing {
+   position: relative;
+   height: 100vh;
+   background: url('../img/showcase.jpg') no-repeat center center/cover;
+
+   &-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: 80%;
+      margin: auto;
+      color: #fff;
+      text-align: center;
+   }
+}
