@@ -35,6 +35,13 @@
    border-radius: 50%;
 }
 
+.line {
+   height: 1px;
+   margin: 1.5rem 0;
+   background: #ccc;
+   
+}
+
 // Buttons
 .btn {
    display: inline-block;
@@ -79,6 +86,29 @@
    &:hover {
       background: lighten($dark-color, 20%);
       color: #fff;
+   }
+}
+
+// Badges
+.badge {
+   margin: 0.3rem;
+   padding: 0.1rem;
+   background: $light-color;
+   color: #333;
+   text-align: center;
+   font-size: 0.8rem;
+
+   &.badge-primary {
+      @include set-background($primary-color);
+   }
+   &.badge-dark {
+      @include set-background($dark-color);
+   }
+   &.badge-success {
+      @include set-background($success-color);
+   }
+   &.badge-danger {
+      @include set-background($danger-color);
    }
 }
 
