@@ -16,6 +16,10 @@ body {
    color: #333;
 }
 
+p {
+   margin-bottom: 0.5em;
+}
+
 a {
    color: $primary-color;
    text-decoration: none;
@@ -29,6 +33,9 @@ img {
    width: 100%;
 }
 
+i {
+   margin-right: 0.5em;
+}
 
 // Navbar
 .navbar {
@@ -77,15 +84,51 @@ img {
    }
 }
 
+.register,
+.login {
+   max-width: 450px;
+
+   h1,
+   .lead {
+      text-align: center;
+   }
+
+   .form input[type='submit'] {
+      width: 100%;
+   }
+
+   .footer {
+      text-align: center;
+   }
+}
+
+.table {
+   width: 100%;
+}
+
 // Profiles Page
 .profile {
    display: grid;
    grid-template-columns: 2fr 4fr 2fr;
-   grid-gap: 2rem;
    align-items: center;
    margin-bottom: 1rem;
-   padding: 1rem;
+   padding: 2rem;
    line-height: 1.8;
+
+   &__img {
+      max-width: 300px;
+      margin: 0 auto;
+      padding: 1rem;
+   }
+
+   &__desc {
+      text-align: center;
+   }
+
+   &__skills {
+      font-size: 1.2rem;
+      padding-left: 10%;
+   }
 }
 
 // Profile Page
@@ -191,3 +234,5 @@ img {
       width: 150px;
    }
 }
+
+@import 'mobile';

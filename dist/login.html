@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav class="navbar bg-primary">
+    <nav class="navbar bg-dark">
       <h1>
         <a href="dashboard.html"> <i class="fas fa-code"></i> DevConnector </a>
       </h1>
@@ -28,7 +28,7 @@
         <li><a href="login.html">Login</a></li>
       </ul>
     </nav>
-    <section class="container">
+    <section class="container login">
       <!-- Alert -->
       <div class="alert alert-danger">
         Invalid Credentials
@@ -45,9 +45,11 @@
         <div class="form-group">
           <input type="password" placeholder="Password" minlength="6" />
         </div>
-        <input type="submit" value="Login" class="btn btn-primary" />
+        <div class="form-group">
+          <input type="submit" value="Login" class="btn btn-primary" />
+        </div>
       </form>
-      <p class="my-1">
+      <p class="my-1 footer">
         Don't have an account? <a href="register.html">Sign Up</a>
       </p>
     </section>

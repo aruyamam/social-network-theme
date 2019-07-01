@@ -55,6 +55,11 @@
    cursor: pointer;
    transition: all .2s ease-in;
 
+   &-block {
+      display: block;
+      width: 100%;
+   }
+
    &.btn-primary {
       @include set-background($primary-color);
       &:hover {
